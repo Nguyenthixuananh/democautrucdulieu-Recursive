@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function findValue(index) {
+    if (index<3) return 1;
+    return findValue(index-1) + findValue(index-2);
+  }
+  let index = prompt('Nhap vi tri muon tim');
+  let result = findValue(index);
+  alert('Vi tri '+ index+ ' co gia tri fibonacci la '+result)
+</script>
+</body>
+</html>
